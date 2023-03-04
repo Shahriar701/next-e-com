@@ -15,7 +15,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd
+            cd next-e-com
+            git pull
             # ./deploy-shopoth-ecom.sh
             npm install
             npm run dev
