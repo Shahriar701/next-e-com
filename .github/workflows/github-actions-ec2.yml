@@ -16,4 +16,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd
-            ./deploy-shopoth-ecom.sh
+            # ./deploy-shopoth-ecom.sh
+            npm install
+            npm run dev
